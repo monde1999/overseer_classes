@@ -10,6 +10,7 @@ public class APIHandler {
     private static String username = "monching";
     private static String password = "desierto";
 
+    /*
     private static void authenticate(String url){
         HttpURLConnection c = null;
         try {
@@ -23,9 +24,9 @@ public class APIHandler {
         } catch (Exception ex){
             ex.printStackTrace();
         }
-    }
+    } */
+    
     public static String getJSON(String url, int timeout) {
-        // authenticate(url);
         HttpURLConnection c = null;
         try {
             URL u = new URL(url);
