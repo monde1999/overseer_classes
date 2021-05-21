@@ -3,6 +3,9 @@ import com.google.gson.GsonBuilder;
 
 public class Main {
     public static void main(String[] args){
+        LoginData data = new LoginData("monching", "desierto");
+        System.out.println(APIHandler.postJSON("url", data));
+        /*
         Gson gson = new Gson();
         int timeout = 5000;
 
@@ -31,6 +34,6 @@ public class Main {
             }
             System.out.println("}");
             u = "";
-        }
+        } */
     }
 }
